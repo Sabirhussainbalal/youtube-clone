@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Clone | Made by Sabir</title>
+  <link rel="shortcut icon" href="fav/logo.png" type="image/x-icon">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="fav/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+
+    <div class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#999999">
+        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+      </svg>
+      <img src="static/youtube-logo.png" alt="youtube-logo" />
+    </div>
+    <div class="left">
+
+      <!-- Inp -->
+      <div class="input">
+        <svg class="src" xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px"
+          fill="#5a5a5a">
+          <path
+            d="M765-144 526-383q-30 22-65.79 34.5-35.79 12.5-76.18 12.5Q284-336 214-406t-70-170q0-100 70-170t170-70q100 0 170 70t70 170.03q0 40.39-12.5 76.18Q599-464 577-434l239 239-51 51ZM384-408q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Z" />
+        </svg>
+        <input type="text" placeholder="Search">
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5a5a5a">
+            <path
+              d="M765-144 526-383q-30 22-65.79 34.5-35.79 12.5-76.18 12.5Q284-336 214-406t-70-170q0-100 70-170t170-70q100 0 170 70t70 170.03q0 40.39-12.5 76.18Q599-464 577-434l239 239-51 51ZM384-408q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Z" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- ----- -->
+      <div class="voice"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+          fill="#5a5a5a">
+          <path
+            d="M480-384q-50 0-85-35t-35-85v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q0 50-35 85t-85 35Zm0-240Zm-36 480v-99q-98.8-13.1-163.4-87.05Q216-404 216-504h72q0 79.68 56.23 135.84 56.22 56.16 136 56.16Q560-312 616-368.16q56-56.16 56-135.84h72q0 100-64.6 173.95Q614.8-256.1 516-243v99h-72Zm36-312q20.4 0 34.2-13.8Q528-483.6 528-504v-240q0-20.4-13.8-34.2Q500.4-792 480-792q-20.4 0-34.2 13.8Q432-764.4 432-744v240q0 20.4 13.8 34.2Q459.6-456 480-456Z" />
+        </svg>
+      </div>
+    </div>
+    <div class="right">
+      <span class="plus pl"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+          fill="#5a5a5a">
+          <path d="M444-444H240v-72h204v-204h72v204h204v72H516v204h-72v-204Z" />
+        </svg> Create</span>
+      <span class="not pl"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+          fill="#5a5a5a">
+          <path
+            d="M192-216v-72h48v-240q0-87 53.5-153T432-763v-53q0-20 14-34t34-14q20 0 34 14t14 34v53q85 16 138.5 82T720-528v240h48v72H192Zm288-276Zm-.21 396Q450-96 429-117.15T408-168h144q0 30-21.21 51t-51 21ZM312-288h336v-240q0-70-49-119t-119-49q-70 0-119 49t-49 119v240Z" />
+        </svg></span>
+      <img src="static/Itachi.png" alt="">
+    </div>
+
+  </header>
+  <!-- Navbar -->
+  <main>
+    <nav class="nav">
+
+      <div class="sidebar">
+        <div class="menus">
+          <!-- Homne -->
+          <ul>
+            <li class="home">
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                fill="#000000ec">
+                <path
+                  d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+              </svg>
+              <span>Home</span>
+            </li>
+            <!-- 2 -->
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#000000ec" height="20px" viewBox="0 0 24 24" width="20px"
+                focusable="false" aria-hidden="true">
+                <path clip-rule="evenodd"
+                  d="m7.61 15.719.392-.22v-2.24l-.534-.228-.942-.404c-.869-.372-1.4-1.15-1.446-1.974-.047-.823.39-1.642 1.203-2.097h.001L15.13 3.59c1.231-.689 2.785-.27 3.466.833.652 1.058.313 2.452-.879 3.118l-1.327.743-.388.217v2.243l.53.227.942.404c.869.372 1.4 1.15 1.446 1.974.047.823-.39 1.642-1.203 2.097l-.002.001-8.845 4.964-.001.001c-1.231.688-2.784.269-3.465-.834-.652-1.058-.313-2.451.879-3.118l1.327-.742Zm1.993 6.002c-1.905 1.066-4.356.46-5.475-1.355-1.057-1.713-.548-3.89 1.117-5.025a4.14 4.14 0 01.305-.189l1.327-.742-.942-.404a4.055 4.055 0 01-.709-.391c-.963-.666-1.578-1.718-1.644-2.877-.08-1.422.679-2.77 1.968-3.49l8.847-4.966c1.905-1.066 4.356-.46 5.475 1.355 1.057 1.713.548 3.89-1.117 5.025a4.074 4.074 0 01-.305.19l-1.327.742.942.403c.253.109.49.24.709.392.963.666 1.578 1.717 1.644 2.876.08 1.423-.679 2.77-1.968 3.491l-8.847 4.965ZM10 14.567a.25.25 0 00.374.217l4.45-2.567a.25.25 0 000-.433l-4.45-2.567a.25.25 0 00-.374.216v5.134Z"
+                  fill-rule="evenodd"></path>
+              </svg>
+              <span>Shorts</span>
+            </li>
+            <!-- 3 -->
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                fill="#000000ec">
+                <path
+                  d="M160-80q-33 0-56.5-23.5T80-160v-400q0-33 23.5-56.5T160-640h640q33 0 56.5 23.5T880-560v400q0 33-23.5 56.5T800-80H160Zm0-80h640v-400H160v400Zm240-40 240-160-240-160v320ZM160-680v-80h640v80H160Zm120-120v-80h400v80H280ZM160-160v-400 400Z" />
+              </svg>
+              <span>Subscriptions</span>
+            </li>
+          </ul>
+          <div class="hidden">
+            <div class="hr"></div>
+            <!-- You -->
+            <ul>
+              <li>
+                <span class="menus-title">You
+                  <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px"
+                    fill="#878484">
+                    <path d="M522-480 333-669l51-51 240 240-240 240-51-51 189-189Z" />
+                  </svg>
+                </span>
+              </li>
+              <!-- 1 -->
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                  fill="#000000ec">
+                  <path
+                    d="M480-144q-140 0-238-98t-98-238h72q0 109 77.5 186.5T480-216q109 0 186.5-77.5T744-480q0-109-77.5-186.5T480-744q-62 0-114.55 25.6Q312.91-692.8 277-648h107v72H144v-240h72v130q46-60 114.5-95T480-816q70 0 131.13 26.6 61.14 26.6 106.4 71.87 45.27 45.26 71.87 106.4Q816-550 816-480t-26.6 131.13q-26.6 61.14-71.87 106.4-45.26 45.27-106.4 71.87Q550-144 480-144Zm100-200L444-480v-192h72v162l115 115-51 51Z" />
+                </svg>
+                <span>History</span>
+              </li>
+              <!-- 2 -->
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                  fill="#000000ec">
+                  <path
+                    d="M144-396v-72h288v72H144Zm0-150v-72h432v72H144Zm0-150v-72h432v72H144Zm480 504v-312l240 156-240 156Z" />
+                </svg>
+                <span>Playlists</span>
+              </li>
+              <!-- 3 -->
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                  fill="#000000ec">
+                  <path
+                    d="m384-312 264-168-264-168v336ZM168-192q-29.7 0-50.85-21.16Q96-234.32 96-264.04v-432.24Q96-726 117.15-747T168-768h624q29.7 0 50.85 21.16Q864-725.68 864-695.96v432.24Q864-234 842.85-213T792-192H168Zm0-72h624v-432H168v432Zm0 0v-432 432Z" />
+                </svg>
+                <span>SYour Videos</span>
+              </li>
+              <!-- 4 -->
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                  fill="#000000ec">
+                  <path
+                    d="m614-310 51-51-149-149v-210h-72v240l170 170ZM480-96q-79.38 0-149.19-30T208.5-208.5Q156-261 126-330.96t-30-149.5Q96-560 126-630q30-70 82.5-122t122.46-82q69.96-30 149.5-30t149.55 30.24q70 30.24 121.79 82.08 51.78 51.84 81.99 121.92Q864-559.68 864-480q0 79.38-30 149.19T752-208.5Q700-156 629.87-126T480-96Zm0-384Zm.48 312q129.47 0 220.5-91.5Q792-351 792-480.48q0-129.47-91.02-220.5Q609.95-792 480.48-792 351-792 259.5-700.98 168-609.95 168-480.48 168-351 259.5-259.5T480.48-168Z" />
+                </svg>
+                <span>Watch Later</span>
+              </li>
+              <!-- 5 -->
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                  fill="#000000ec">
+                  <path
+                    d="M720-144H264v-480l288-288 32 22q17 12 26 30.5t5 38.5l-1 5-38 192h264q30 0 51 21t21 51v57q0 8-1.5 14.5T906-467L786.93-187.8Q778-168 760-156t-40 12Zm-384-72h384l120-279v-57H488l49-243-201 201v378Zm0-378v378-378Zm-72-30v72H120v336h144v72H48v-480h216Z" />
+                </svg>
+                <span>Liked Videos</span>
+              </li>
+            </ul>
+            <div class="hr"></div>
+            <!-- Subscriptions -->
+            <ul>
+              <li>
+                <span class="menus-title">Subscriptions
+              </li>
+              <!-- 1 -->
+              <li>
+                <img src="static/harry.jpg" alt="">
+                <span>CodeWithHarry</span>
+                <span class="dot">&#9679;</span>
+              </li>
+              <!-- 2 -->
+              <li>
+                <img src="static/apna.jpg" alt="">
+                <span>Apna College</span>
+                <span class="dot">&#9679;</span>
+              </li>
+              <!-- 3 -->
+              <li>
+                <img src="static/Neeraj.jpg" alt="">
+                <span>Neeraj Walia</span>
+              </li>
+              <!-- 4 -->
+              <li>
+                <img src="static/Rathore.jpg" alt="">
+                <span>Dhruv Rathee</span>
+              </li>
+              <!-- 5 -->
+              <li>
+                <img src="static/sabir.jfif" alt="">
+                <span>Sabir Hussain Balal</span>
+                <span class="dot">&#9679;</span>
+              </li>
+              <!-- 6 -->
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                  fill="#000000ec">
+                  <path d="M480-333 240-573l51-51 189 189 189-189 51 51-240 240Z" />
+                </svg>
+                <span>Show more</span>
+              </li>
+            </ul>
+            <div class="hr"></div>
+            <!-- Explore -->
+            <ul>
+              <li>
+                <span class="menus-title">Explore
+                </span>
+              </li>
+              <!-- 1 -->
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                  fill="#000000ec">
+                  <path
+                    d="M264-384q0 46 19.5 87.5T338-223q-1-5-1.5-10t-.5-10q0-27 10-50.5t27-42.5l107-120 107 120q17 20 27 43.5t10 49.5q0 5-.5 10.5T622-222q35-29 54.5-71.5T696-384q0-51-17.5-100.5T628-576q-17 11-35.5 17t-40.5 6q-52 0-91.5-32T411-668q-36 33-63 67.5T302-530q-19 36-28.5 73t-9.5 73Zm216 36-53 60q-9 11-14 22.5t-5 25.5q0 30 21 51t51 21q30 0 51-21t21-51q0-14-5-26t-14-22l-53-60Zm0-468v119q0 30 21 51t51 21q17 0 31.5-7t24.5-20l16-20q64 38 104 118.5T768-384q0 120-84 204T480-96q-120 0-204-84t-84-204q0-112 76-226.5T480-816Z" />
+                </svg>
+                <span>Trending</span>
+              </li>
+              <!-- 2 -->
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                  fill="#000000ec">
+                  <path
+                    d="M408-144q-60 0-102-42t-42-102q0-60 42-102t102-42q20 0 38 5.5t34 14.5v-404h216v144H552v384q0 60-42 102t-102 42Z" />
+                </svg>
+                <span>Music</span>
+              </li>
+              <!-- 3 -->
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                  fill="#000000ec">
+                  <path
+                    d="M217.71-192q-54.71 0-92.81-38.87-38.11-38.86-39.9-94 0-8.13.91-16.2.91-8.07 2.74-16.15l76.59-301.35Q178-707 216-737.5q38-30.5 87.72-30.5h352.56Q706-768 744-737.5t50.78 78.94l76.66 301.37q1.82 8.08 3.19 16.6Q876-332.07 876-324q0 55.15-39 93.58Q798-192 742.33-192 704-192 672-211.5T623-265l-25.45-51.18Q593-325 584.5-330.5T565-336H394q-11 0-19 5.5t-12.71 14.37l-26.35 51.43Q319-231 287.5-211.5 256-192 217.71-192Zm.64-72q16.65 0 31.15-9.5t22.06-24.43L298-348q14-28 39.5-44t56.34-16h172.32q30.84 0 56.31 16.36Q647.95-375.27 662-348l26 50q8 16 22.26 25 14.26 9 31.74 9 25.12 0 43.06-17T803-323q0-6-2-16l-74.77-301.69Q720-665 700.5-680.5 681-696 655.75-696H304q-25.45 0-45 15.05T234-642l-75.21 301.59q-1.79 5.4-1.79 16.2 0 25.21 17.97 42.71 17.96 17.5 43.38 17.5Zm321.44-252q15.21 0 25.71-10.29t10.5-25.5q0-15.21-10.29-25.71t-25.5-10.5q-15.21 0-25.71 10.29t-10.5 25.5q0 15.21 10.29 25.71t25.5 10.5Zm72-72q15.21 0 25.71-10.29t10.5-25.5q0-15.21-10.29-25.71t-25.5-10.5q-15.21 0-25.71 10.29t-10.5 25.5q0 15.21 10.29 25.71t25.5 10.5Zm0 144q15.21 0 25.71-10.29t10.5-25.5q0-15.21-10.29-25.71t-25.5-10.5q-15.21 0-25.71 10.29t-10.5 25.5q0 15.21 10.29 25.71t25.5 10.5Zm72-72q15.21 0 25.71-10.29t10.5-25.5q0-15.21-10.29-25.71t-25.5-10.5q-15.21 0-25.71 10.29t-10.5 25.5q0 15.21 10.29 25.71t25.5 10.5ZM360-468q10.4 0 17.2-6.8 6.8-6.8 6.8-17.2v-36h36q10.4 0 17.2-6.8 6.8-6.8 6.8-17.2 0-10.4-6.8-17.2-6.8-6.8-17.2-6.8h-36v-36q0-10.4-6.8-17.2-6.8-6.8-17.2-6.8-10.4 0-17.2 6.8-6.8 6.8-6.8 17.2v36h-36q-10.4 0-17.2 6.8-6.8 6.8-6.8 17.2 0 10.4 6.8 17.2 6.8 6.8 17.2 6.8h36v36q0 10.4 6.8 17.2 6.8 6.8 17.2 6.8Zm120-12Z" />
+                </svg>
+                <span>Gaming</span>
+              </li>
+              <!-- 4 -->
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                  fill="#000000ec">
+                  <path
+                    d="M168-144q-29.7 0-50.85-21.15Q96-186.3 96-216v-528q0-29.7 21.15-50.85Q138.3-816 168-816h624q29.7 0 50.85 21.15Q864-773.7 864-744v528q0 29.7-21.15 50.85Q821.7-144 792-144H168Zm0-72h624v-528H168v528Zm72-96h480v-72H240v72Zm0-144h168v-216H240v216Zm240 0h240v-72H480v72Zm0-144h240v-72H480v72ZM168-216v-528 528Z" />
+                </svg>
+                <span>News</span>
+              </li>
+              <!-- 5 -->
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                  fill="#000000ec">
+                  <path
+                    d="M288-144v-72h156v-124q-42-8-77.5-33.5T313-434q-73-9-121-62.51T144-622v-26q0-29.7 21.15-50.85Q186.3-720 216-720h72v-96h384v96h72.21Q774-720 795-698.85T816-648v24q0 72-48 126.5T647-434q-18 35-53.5 60.5T516-340v124h156v72H288Zm0-372v-132h-72v24q0 37 19 65.5t53 42.5Zm192 108q50 0 85-35t35-85v-216H360v216q0 50 35 85t85 35Zm192-108q34-14 53-42.5t19-65.5v-24h-72v132Zm-192-59Z" />
+                </svg>
+                <span>Sports</span>
+              </li>
+            </ul>
+            <div class="hr"></div>
+            <!-- Youtube -->
+            <ul>
+              <li>
+                <span class="menus-title">More from YouTube
+                </span>
+              </li>
+              <!-- 1 -->
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
+                  y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24"
+                  xml:space="preserve" focusable="false" aria-hidden="true"
+                  style="pointer-events: none; display: inherit; width: 20px; height: 20px;">
+                  <g>
+                    <path fill="#FF0033"
+                      d="M21.58,7.19c-0.23-0.86-0.91-1.54-1.77-1.77C18.25,5,12,5,12,5S5.75,5,4.19,5.42   C3.33,5.65,2.65,6.33,2.42,7.19C2,8.75,2,12,2,12s0,3.25,0.42,4.81c0.23,0.86,0.91,1.54,1.77,1.77C5.75,19,12,19,12,19   s6.25,0,7.81-0.42c0.86-0.23,1.54-0.91,1.77-1.77C22,15.25,22,12,22,12S22,8.75,21.58,7.19z">
+                    </path>
+                    <polygon fill="#FFFFFF" points="10,15 15,12 10,9  "></polygon>
+                  </g>
+                </svg>
+                <span>YouTube Premium</span>
+              </li>
+              <!-- 2 -->
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
+                  y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24"
+                  xml:space="preserve" focusable="false" aria-hidden="true"
+                  style="pointer-events: none; display: inherit; width: 20px; height: 20px;">
+                  <g>
+                    <path fill="#FF0033"
+                      d="M11.13,1.21c0.48-0.28,1.26-0.28,1.74,0l8.01,4.64c0.48,0.28,0.87,0.97,0.87,1.53v9.24   c0,0.56-0.39,1.25-0.87,1.53l-8.01,4.64c-0.48,0.28-1.26,0.28-1.74,0l-8.01-4.64c-0.48-0.28-0.87-0.97-0.87-1.53V7.38   c0-0.56,0.39-1.25,0.87-1.53L11.13,1.21z">
+                    </path>
+                    <polygon fill="#FFFFFF" points="10,15 15,12 10,9  "></polygon>
+                    <path fill="#FFFFFF"
+                      d="M12,6c0.11,0,0.19,0.03,0.21,0.04l4.89,2.82c0.05,0.03,0.14,0.2,0.14,0.37v5.67c0,0.17-0.09,0.34-0.14,0.37   l-4.9,2.83c-0.03,0.01-0.1,0.04-0.21,0.04c-0.11,0-0.19-0.03-0.21-0.04l-4.9-2.83c-0.05-0.03-0.15-0.2-0.15-0.37V9.24   c0-0.17,0.1-0.34,0.14-0.37l4.9-2.83C11.82,6.03,11.89,6,12,6 M12,5c-0.25,0-0.51,0.06-0.71,0.18L6.39,8   C5.99,8.23,5.75,8.77,5.75,9.24v5.67c0,0.47,0.24,1,0.64,1.24l4.9,2.83c0.2,0.12,0.46,0.18,0.71,0.18c0.25,0,0.51-0.06,0.71-0.18   l4.9-2.83c0.41-0.24,0.64-0.77,0.64-1.24V9.24c0-0.47-0.23-1-0.64-1.24l-4.9-2.82C12.51,5.06,12.26,5,12,5L12,5z">
+                    </path>
+                  </g>
+                </svg>
+                <span>YouTube Studio</span>
+              </li>
+              <!-- 3 -->
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
+                  y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24"
+                  xml:space="preserve" focusable="false" aria-hidden="true"
+                  style="pointer-events: none; display: inherit; width: 20px; height: 20px;">
+                  <g>
+                    <circle id="XMLID_4814__yt100" fill="#FF0033" cx="12" cy="12" r="11"></circle>
+                    <path fill="#FFFFFF"
+                      d="M12,6.25c3.17,0,5.75,2.58,5.75,5.75s-2.58,5.75-5.75,5.75S6.25,15.17,6.25,12S8.83,6.25,12,6.25 M12,5.25   c-3.73,0-6.75,3.02-6.75,6.75s3.02,6.75,6.75,6.75s6.75-3.02,6.75-6.75S15.73,5.25,12,5.25L12,5.25z">
+                    </path>
+                    <polygon fill="#FFFFFF" points="10,15 15,12 10,9  "></polygon>
+                  </g>
+                </svg>
+                <span>YouTube Music</span>
+              </li>
+              <!-- 4 -->
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
+                  y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24"
+                  xml:space="preserve" focusable="false" aria-hidden="true"
+                  style="pointer-events: none; display: inherit; width: 20px; height: 20px;">
+                  <g>
+                    <g>
+                      <path fill="#FF0033"
+                        d="M22.64,13.2c-0.01-1.04-0.62-5.98-0.9-6.74c-0.19-0.5-0.58-1.4-1.31-1.95c-0.94-0.7-1.7-0.83-2.68-0.85    C17.06,3.64,6.12,5.03,4.79,5.51C3.8,5.88,3.03,6.35,2.42,6.95c-0.99,0.98-1.18,1.93-1.02,3.6c0.14,1.52,0.85,6.55,1.21,7.59    c0.39,1.15,1.11,2.03,2.3,2.16c3.62,0.39,4.48-1.6,12.9-1.58c2.55,0.01,3.82-1.11,4.35-2.08C22.77,15.49,22.65,13.99,22.64,13.2z">
+                      </path>
+                      <path fill="#212121"
+                        d="M17.47,4.04C17.47,4.04,17.48,4.04,17.47,4.04c0.94,0.02,1.67,0.14,2.56,0.81    c0.7,0.53,1.08,1.39,1.25,1.86c0.28,0.73,0.85,5.44,0.86,6.43c0.01,0.76,0.12,2.19-0.47,3.28c-0.5,0.92-1.71,1.98-4.13,1.98    c-0.01,0-0.01,0-0.02,0c-0.04,0-0.07,0-0.11,0c-7.23,0-8.55,1.56-11.33,1.56c-0.27,0-0.56-0.02-0.87-0.05    c-1.13-0.12-1.82-0.96-2.19-2.06c-0.34-0.99-1.01-5.79-1.15-7.24c-0.15-1.6,0.03-2.51,0.98-3.44c0.58-0.57,1.32-1.02,2.27-1.37    C6.38,5.35,16.73,4.04,17.47,4.04 M17.47,3.2c-0.47,0-3.53,0.37-6.09,0.72C8.82,4.27,5.6,4.75,4.84,5.03    c-1.06,0.39-1.9,0.9-2.56,1.56C1.05,7.8,0.9,9.06,1.05,10.7c0.12,1.27,0.8,6.28,1.19,7.43c0.53,1.55,1.55,2.48,2.89,2.62    c0.33,0.04,0.64,0.05,0.96,0.05c1.17,0,2.1-0.25,3.18-0.54c1.69-0.45,3.8-1.02,8.15-1.02l0.11,0l0.02,0    c1.07,0,3.68-0.24,4.86-2.42c0.63-1.17,0.6-2.59,0.58-3.43c0-0.09,0-0.18-0.01-0.26c-0.01-1.01-0.59-5.85-0.92-6.72    c-0.38-1-0.89-1.75-1.53-2.23c-1.05-0.79-1.94-0.96-3.04-0.98l-0.01,0L17.47,3.2L17.47,3.2z">
+                      </path>
+                    </g>
+                    <g>
+                      <path fill="#FFFFFF"
+                        d="M15.28,11.85c-0.03,0.02-0.05,0.03-0.08,0.05c-0.21,0.14-0.42,0.28-0.63,0.43    c-0.49,0.33-3.33,2.26-3.33,2.26c-0.24,0.18-0.7,0.47-0.87,0.38c-0.17-0.09-0.23-0.72-0.27-1.02l-0.01-0.07    c-0.05-0.36-0.46-3.83-0.51-4.21C9.56,9.56,9.5,9.17,9.62,9.08c0.13-0.1,0.47,0.01,0.58,0.05c0.66,0.21,3.93,1.35,4.95,1.86    c0.03,0.02,0.06,0.03,0.1,0.04c0.15,0.06,0.35,0.15,0.35,0.39C15.6,11.65,15.42,11.76,15.28,11.85z">
+                      </path>
+                      <path fill="#212121"
+                        d="M10.04,9.59c1.14,0.38,3.77,1.32,5.01,1.87c-0.15,0.1-0.3,0.2-0.45,0.3c-0.58,0.39-3.94,2.68-3.94,2.68    l-0.02,0.01l-0.02,0.01c0,0,0,0,0,0c0-0.03-0.01-0.05-0.01-0.07l-0.02-0.13l-0.01-0.08c-0.04-0.31-0.31-2.58-0.48-3.94    C10.08,9.98,10.06,9.76,10.04,9.59 M9.4,8.56c-0.07,0-0.14,0.01-0.18,0.05c-0.15,0.11-0.07,0.58-0.05,0.7    c0.05,0.45,0.54,4.56,0.6,4.99l0.01,0.08c0.05,0.36,0.12,1.1,0.33,1.21c0.03,0.01,0.06,0.02,0.1,0.02c0.25,0,0.68-0.28,0.93-0.47    c0,0,3.36-2.29,3.94-2.68c0.25-0.17,0.5-0.34,0.75-0.51c0.03-0.02,0.06-0.04,0.1-0.06c0.17-0.1,0.38-0.23,0.38-0.5    c-0.01-0.29-0.24-0.39-0.41-0.46c-0.04-0.02-0.08-0.03-0.11-0.05c-1.21-0.61-5.09-1.96-5.87-2.21C9.8,8.63,9.58,8.56,9.4,8.56    L9.4,8.56z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>
+                <span>Youtube Kids</span>
+              </li>
+            </ul>
+            <!-- Setting -->
+            <ul>
+              <!-- 1 -->
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                  fill="#000000ec">
+                  <path
+                    d="M480-480ZM403-96l-22-114q-23-9-44.5-21T296-259l-110 37-77-133 87-76q-2-12-3-24t-1-25q0-13 1-25t3-24l-87-76 77-133 110 37q19-16 40.5-28t44.5-21l22-114h154l22 114q23 9 44.5 21t40.5 28l110-37 77 133-75 65q-23-7-46-10.5t-46-1.5l75-69-18-30-96 32q-24-29-57-48t-71-26l-19-99h-36l-19 99q-38 7-71 26t-57 48l-96-32-18 30 76 67q-6 17-9.5 35.5T264-480q0 20 3.5 38.5T277-406l-76 67 18 30 96-32q23 27 53.5 45.5T434-269q4 51 25.5 95.5T516-96H403Zm36-246q4-18 10-35t14-33q-24-6-39.5-25T408-480q0-30 21-51t51-21q23 0 41 13t26 33q15-11 31.5-18.5T612-538q-17-38-52-62t-80-24q-60 0-102 42t-42 102q0 50 29 87t74 51Zm246 162 108-108-108-108-34 34 50 50H601v48h100l-50 50 34 34Zm12 84q-80 0-136-56t-56-136q0-80 56-136t136-56q80 0 136 56t56 136q0 80-56 136T697-96Z" />
+                </svg>
+                <span>Setting</span>
+              </li>
+              <!-- 2 -->
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                  fill="#000000ec">
+                  <path
+                    d="M192-144v-672h336l24 96h216v384H528l-24-96H264v288h-72Zm300-431Zm92 167h112v-240H496l-24-96H264v240h296l24 96Z" />
+                </svg>
+                <span>Report history</span>
+              </li>
+              <!-- 3 -->
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                  fill="#000000ec">
+                  <path
+                    d="M480-240q20 0 34-14t14-34q0-20-14-34t-34-14q-20 0-34 14t-14 34q0 20 14 34t34 14Zm-36-153h73q0-37 6.5-52.5T555-485q35-34 48.5-58t13.5-53q0-55-37.5-89.5T484-720q-51 0-88.5 27T343-620l65 27q9-28 28.5-43.5T482-652q28 0 46 16t18 42q0 23-15.5 41T496-518q-35 32-43.5 52.5T444-393Zm36 297q-79 0-149-30t-122.5-82.5Q156-261 126-331T96-480q0-80 30-149.5t82.5-122Q261-804 331-834t149-30q80 0 149.5 30t122 82.5Q804-699 834-629.5T864-480q0 79-30 149t-82.5 122.5Q699-156 629.5-126T480-96Zm0-72q130 0 221-91t91-221q0-130-91-221t-221-91q-130 0-221 91t-91 221q0 130 91 221t221 91Zm0-312Z" />
+                </svg>
+                <span>Help</span>
+              </li>
+              <!-- 4 -->
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                  fill="#000000ec">
+                  <path
+                    d="M479.79-672q15.21 0 25.71-10.29t10.5-25.5q0-15.21-10.29-25.71t-25.5-10.5q-15.21 0-25.71 10.29t-10.5 25.5q0 15.21 10.29 25.71t25.5 10.5ZM444-360h72v-264h-72v264ZM96-96v-696q0-29.7 21.15-50.85Q138.3-864 168-864h624q29.7 0 50.85 21.15Q864-821.7 864-792v480q0 29.7-21.15 50.85Q821.7-240 792-240H240L96-96Zm114-216h582v-480H168v522l42-42Zm-42 0v-480 480Z" />
+                </svg>
+                <span>Send feedback</span>
+              </li>
+            </ul>
+            <div class="hr"></div>
+            <!-- Footer -->
+            <ul>
+              <li class="footer_li">
+                <span>About</span> <span>Press</span> <span>Copyright</span> <span>Contact</span> <span>Creators</span>
+                <span>Advertise</span> <span>Developers</span>
+              </li>
+              <li class="footer_li">
+                <span>Terms</span> <span>Privacy</span> <span>Policy & Safety</span> <span>How YouTube works</span>
+                <span>Test new features</span>
+              </li>
+              <li class="footer">&copy; 2024 Google LLC</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Other  -->
+    <div class="container">
+      <div class="titles">
+        <ul>
+          <li style="background-color: #000; color: white;">All</li>
+          <li>Coding</li>
+          <li>Music</li>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>HTMLCSS</li>
+          <li>Trading</li>
+          <li>FreePalestine</li>
+          <li>syria</li>
+          <li>AI</li>
+          <li>DataScience</li>
+          <div class="next">
+            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#000">
+              <path d="M522-480 333-669l51-51 240 240-240 240-51-51 189-189Z" />
+            </svg>
+          </div>
+        </ul>
+      </div>
+      <!-- Card -->
+      <div class="cards">
+        <!-- 1 -->
+        <div class="box">
+          <div class="black"> <i class="fa fa-play" style="font-size:17px; color: white; margin: 0 5px;"></i><span>PLAY</span></div>
+          <img src="static/bye-song.jfif" alt="">
+          <div class="content">
+            <div class="texts">
+              <div class="title">Mix - Bye Bye Bye - NSYNC | The Gamer Guy</div>
+              <div class="paragraph">Backstreet Boys, NSYNC</div>
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                fill="000000c8">
+                <path
+                  d="M479.79-192Q450-192 429-213.21t-21-51Q408-294 429.21-315t51-21Q510-336 531-314.79t21 51Q552-234 530.79-213t-51 21Zm0-216Q450-408 429-429.21t-21-51Q408-510 429.21-531t51-21Q510-552 531-530.79t21 51Q552-450 530.79-429t-51 21Zm0-216Q450-624 429-645.21t-21-51Q408-726 429.21-747t51-21Q510-768 531-746.79t21 51Q552-666 530.79-645t-51 21Z" />
+              </svg>
+            </div>
+
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="box">
+           <div class="black"> <i class="fa fa-play" style="font-size:17px; color: white; margin: 0 5px;"></i><span>PLAY</span></div>
+          <img src="static/perfect-song.jpg" alt="">
+
+          <div class="content">
+            <div class="ing"> <img src="static/anime.jfif" alt=""></div>
+            <div class="texts">
+              <div class="title">Perfect Song (slowed and reverb) lo-fi <br> #song #music #slowed-reverb</div>
+              <div class="paragraph">Deep Focus, Chill Music lab and more</div>
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                fill="000000c8">
+                <path
+                  d="M479.79-192Q450-192 429-213.21t-21-51Q408-294 429.21-315t51-21Q510-336 531-314.79t21 51Q552-234 530.79-213t-51 21Zm0-216Q450-408 429-429.21t-21-51Q408-510 429.21-531t51-21Q510-552 531-530.79t21 51Q552-450 530.79-429t-51 21Zm0-216Q450-624 429-645.21t-21-51Q408-726 429.21-747t51-21Q510-768 531-746.79t21 51Q552-666 530.79-645t-51 21Z" />
+              </svg>
+            </div>
+
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="box">
+           <div class="black"> <i class="fa fa-play" style="font-size:17px; color: white; margin: 0 5px;"></i><span>PLAY</span></div>
+          <img src="static/software.jfif" alt="">
+          <div class="content">
+            <div class="ing"> <img src="static/dev.jfif" alt=""></div>
+            <div class="texts">
+              <div class="title">Apply for Software Engineering Jobs</div>
+              <div class="paragraph">Sabir Hussain <br>
+                1.5M views <span class="dotted">●</span> 5 days ago</div>
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                fill="000000c8">
+                <path
+                  d="M479.79-192Q450-192 429-213.21t-21-51Q408-294 429.21-315t51-21Q510-336 531-314.79t21 51Q552-234 530.79-213t-51 21Zm0-216Q450-408 429-429.21t-21-51Q408-510 429.21-531t51-21Q510-552 531-530.79t21 51Q552-450 530.79-429t-51 21Zm0-216Q450-624 429-645.21t-21-51Q408-726 429.21-747t51-21Q510-768 531-746.79t21 51Q552-666 530.79-645t-51 21Z" />
+              </svg>
+            </div>
+
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="box">
+           <div class="black"> <i class="fa fa-play" style="font-size:17px; color: white; margin: 0 5px;"></i><span>PLAY</span></div>
+          <img src="static/python.jfif" alt="">
+          <div class="content">
+            <div class="ing"> <img src="static/Itachi.png" alt=""></div>
+            <div class="texts">
+              <div class="title">Hacking with Python: Full Course - 1 Hour.
+                Learn How to Hack Any...</div>
+              <div class="paragraph">Python College <br>
+                39K views <span class="dotted">●</span> 1 days ago</div>
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                fill="000000c8">
+                <path
+                  d="M479.79-192Q450-192 429-213.21t-21-51Q408-294 429.21-315t51-21Q510-336 531-314.79t21 51Q552-234 530.79-213t-51 21Zm0-216Q450-408 429-429.21t-21-51Q408-510 429.21-531t51-21Q510-552 531-530.79t21 51Q552-450 530.79-429t-51 21Zm0-216Q450-624 429-645.21t-21-51Q408-726 429.21-747t51-21Q510-768 531-746.79t21 51Q552-666 530.79-645t-51 21Z" />
+              </svg>
+            </div>
+
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="box">
+           <div class="black"> <i class="fa fa-play" style="font-size:17px; color: white; margin: 0 5px;"></i><span>PLAY</span></div>
+          <img src="static/yt.jpg" alt="">
+          <div class="content">
+            <div class="ing"> <img src="static/programmer.jfif" alt=""></div>
+            <div class="texts">
+              <div class="title">How to Build a Youtube Clone. HTML, CSS</div>
+              <div class="paragraph">Coder Master <br>
+                8.2K views <span class="dotted">●</span> 3 weeks ago</div>
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                fill="000000c8">
+                <path
+                  d="M479.79-192Q450-192 429-213.21t-21-51Q408-294 429.21-315t51-21Q510-336 531-314.79t21 51Q552-234 530.79-213t-51 21Zm0-216Q450-408 429-429.21t-21-51Q408-510 429.21-531t51-21Q510-552 531-530.79t21 51Q552-450 530.79-429t-51 21Zm0-216Q450-624 429-645.21t-21-51Q408-726 429.21-747t51-21Q510-768 531-746.79t21 51Q552-666 530.79-645t-51 21Z" />
+              </svg>
+            </div>
+
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="box">
+           <div class="black"> <i class="fa fa-play" style="font-size:17px; color: white; margin: 0 5px;"></i><span>PLAY</span></div>
+          <img src="static/pky.jfif" alt="">
+          <div class="content">
+            <div class="texts">
+              <div class="title">Mix - Peaky Blinder (Slowed+Reverb)</div>
+              <div class="paragraph">Otnicka, Duke Luke, RanDal and more</div>
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                fill="000000c8">
+                <path
+                  d="M479.79-192Q450-192 429-213.21t-21-51Q408-294 429.21-315t51-21Q510-336 531-314.79t21 51Q552-234 530.79-213t-51 21Zm0-216Q450-408 429-429.21t-21-51Q408-510 429.21-531t51-21Q510-552 531-530.79t21 51Q552-450 530.79-429t-51 21Zm0-216Q450-624 429-645.21t-21-51Q408-726 429.21-747t51-21Q510-768 531-746.79t21 51Q552-666 530.79-645t-51 21Z" />
+              </svg>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <p class="title"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+          focusable="false" aria-hidden="true"
+          style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+          <path
+            d="m19.45,3.88c1.12,1.82.48,4.15-1.42,5.22l-1.32.74.94.41c1.36.58,2.27,1.85,2.35,3.27.08,1.43-.68,2.77-1.97,3.49l-8,4.47c-1.91,1.06-4.35.46-5.48-1.35-1.12-1.82-.48-4.15,1.42-5.22l1.33-.74-.94-.41c-1.36-.58-2.27-1.85-2.35-3.27-.08-1.43.68-2.77,1.97-3.49l8-4.47c1.91-1.06,4.35-.46,5.48,1.35Z"
+            fill="#f03"></path>
+          <path d="m10,15l5-3-5-3v6Z" fill="#fff"></path>
+        </svg> Shorts</p>
+      <div class="shorts">
+
+        <div class="short">
+          <img src="static/bye-song.jfif" alt="">
+          <div class="content">
+            <div class="texts">
+              <div class="title">Deadpool Dance <br>opening ...</div>
+              <div class="paragraph">301K views</div>
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                fill="000000c8">
+                <path
+                  d="M479.79-192Q450-192 429-213.21t-21-51Q408-294 429.21-315t51-21Q510-336 531-314.79t21 51Q552-234 530.79-213t-51 21Zm0-216Q450-408 429-429.21t-21-51Q408-510 429.21-531t51-21Q510-552 531-530.79t21 51Q552-450 530.79-429t-51 21Zm0-216Q450-624 429-645.21t-21-51Q408-726 429.21-747t51-21Q510-768 531-746.79t21 51Q552-666 530.79-645t-51 21Z" />
+              </svg>
+            </div>
+
+          </div>
+        </div>
+        <!--  -->
+        <div class="short">
+          <img src="static/csgo.jfif" alt="">
+          <div class="content">
+            <div class="texts">
+              <div class="title">Epic CSGO Clutch<br>Moments... <br>#CSGO #Gaming #Clutch.</div>
+              <div class="paragraph">150K views <span class="dotted">●</span> 1 hours ago</div>
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                fill="000000c8">
+                <path
+                  d="M479.79-192Q450-192 429-213.21t-21-51Q408-294 429.21-315t51-21Q510-336 531-314.79t21 51Q552-234 530.79-213t-51 21Zm0-216Q450-408 429-429.21t-21-51Q408-510 429.21-531t51-21Q510-552 531-530.79t21 51Q552-450 530.79-429t-51 21Zm0-216Q450-624 429-645.21t-21-51Q408-726 429.21-747t51-21Q510-768 531-746.79t21 51Q552-666 530.79-645t-51 21Z" />
+              </svg>
+            </div>
+
+          </div>
+        </div>
+        <!--  -->
+        <div class="short">
+          <img src="static/1.6.jfif" alt="">
+          <div class="content">
+            <div class="texts">
+              <div class="title">Classic CS1.6 Highlights...</div>
+              <div class="paragraph">75K views</div>
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                fill="000000c8">
+                <path
+                  d="M479.79-192Q450-192 429-213.21t-21-51Q408-294 429.21-315t51-21Q510-336 531-314.79t21 51Q552-234 530.79-213t-51 21Zm0-216Q450-408 429-429.21t-21-51Q408-510 429.21-531t51-21Q510-552 531-530.79t21 51Q552-450 530.79-429t-51 21Zm0-216Q450-624 429-645.21t-21-51Q408-726 429.21-747t51-21Q510-768 531-746.79t21 51Q552-666 530.79-645t-51 21Z" />
+              </svg>
+            </div>
+
+          </div>
+        </div>
+        <!--  -->
+        <div class="short">
+          <img src="static/py.jfif" alt="">
+          <div class="content">
+            <div class="texts">
+              <div class="title">Beginner's Guide to <br>Python Coding.</div>
+              <div class="paragraph">Coding #Programming br>320K views</div>
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                fill="000000c8">
+                <path
+                  d="M479.79-192Q450-192 429-213.21t-21-51Q408-294 429.21-315t51-21Q510-336 531-314.79t21 51Q552-234 530.79-213t-51 21Zm0-216Q450-408 429-429.21t-21-51Q408-510 429.21-531t51-21Q510-552 531-530.79t21 51Q552-450 530.79-429t-51 21Zm0-216Q450-624 429-645.21t-21-51Q408-726 429.21-747t51-21Q510-768 531-746.79t21 51Q552-666 530.79-645t-51 21Z" />
+              </svg>
+            </div>
+
+          </div>
+        </div>
+        <!--  -->
+        <div class="short">
+          <img src="static/islam.jfif" alt="">
+          <div class="content">
+            <div class="texts">
+              <div class="title">Understanding Islamic<br>Traditions... </div>
+              <div class="paragraph">#Islam #Culture #Community<br>90K views</div>
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                fill="000000c8">
+                <path
+                  d="M479.79-192Q450-192 429-213.21t-21-51Q408-294 429.21-315t51-21Q510-336 531-314.79t21 51Q552-234 530.79-213t-51 21Zm0-216Q450-408 429-429.21t-21-51Q408-510 429.21-531t51-21Q510-552 531-530.79t21 51Q552-450 530.79-429t-51 21Zm0-216Q450-624 429-645.21t-21-51Q408-726 429.21-747t51-21Q510-768 531-746.79t21 51Q552-666 530.79-645t-51 21Z" />
+              </svg>
+            </div>
+
+          </div>
+        </div>
+        <!--  -->
+      </div>
+      <div class="middle-line">
+        <div class="lines">
+          <div class="hr-line"></div><button>Show more <svg xmlns="http://www.w3.org/2000/svg" height="20px"
+              viewBox="0 -960 960 960" width="20px" fill="#9a9a9a">
+              <path d="M480-333 240-573l51-51 189 189 189-189 51 51-240 240Z" />
+            </svg></button>
+        </div>
+      </div>
+      <div class="cards">
+        <!-- 1-->
+        <div class="box">
+           <div class="black"> <i class="fa fa-play" style="font-size:17px; color: white; margin: 0 5px;"></i><span>PLAY</span></div>
+          <img src="static/upwork.jfif" alt="">
+
+          <div class="content">
+            <div class="ing"> <img src="static/freelancer.jfif" alt=""></div>
+            <div class="texts">
+              <div class="title">Maximize Your Earnings on<br>Upwork... <br>#Upwork #Freelancing</div>
+              <div class="paragraph">Freelancer<br>200K views</div>
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                fill="000000c8">
+                <path
+                  d="M479.79-192Q450-192 429-213.21t-21-51Q408-294 429.21-315t51-21Q510-336 531-314.79t21 51Q552-234 530.79-213t-51 21Zm0-216Q450-408 429-429.21t-21-51Q408-510 429.21-531t51-21Q510-552 531-530.79t21 51Q552-450 530.79-429t-51 21Zm0-216Q450-624 429-645.21t-21-51Q408-726 429.21-747t51-21Q510-768 531-746.79t21 51Q552-666 530.79-645t-51 21Z" />
+              </svg>
+            </div>
+
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="box">
+           <div class="black"> <i class="fa fa-play" style="font-size:17px; color: white; margin: 0 5px;"></i><span>PLAY</span></div>
+          <img src="static/love.jfif" alt="">
+          <div class="content">
+            <div class="texts">
+              <div class="title">Mix - Love me Like You do...</div>
+              <div class="paragraph">200K views</div>
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                fill="000000c8">
+                <path
+                  d="M479.79-192Q450-192 429-213.21t-21-51Q408-294 429.21-315t51-21Q510-336 531-314.79t21 51Q552-234 530.79-213t-51 21Zm0-216Q450-408 429-429.21t-21-51Q408-510 429.21-531t51-21Q510-552 531-530.79t21 51Q552-450 530.79-429t-51 21Zm0-216Q450-624 429-645.21t-21-51Q408-726 429.21-747t51-21Q510-768 531-746.79t21 51Q552-666 530.79-645t-51 21Z" />
+              </svg>
+            </div>
+
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="box">
+           <div class="black"> <i class="fa fa-play" style="font-size:17px; color: white; margin: 0 5px;"></i><span>PLAY</span></div>
+          <img src="static/vs.jfif" alt="">
+          <div class="content">
+            <div class="texts">
+              <div class="title">Mix - 10 Fun Mini JavaScript<br>Projects to Boost Your Skills... </div>
+              <div class="paragraph">150K views</div>
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                fill="000000c8">
+                <path
+                  d="M479.79-192Q450-192 429-213.21t-21-51Q408-294 429.21-315t51-21Q510-336 531-314.79t21 51Q552-234 530.79-213t-51 21Zm0-216Q450-408 429-429.21t-21-51Q408-510 429.21-531t51-21Q510-552 531-530.79t21 51Q552-450 530.79-429t-51 21Zm0-216Q450-624 429-645.21t-21-51Q408-726 429.21-747t51-21Q510-768 531-746.79t21 51Q552-666 530.79-645t-51 21Z" />
+              </svg>
+            </div>
+
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="box">
+           <div class="black"> <i class="fa fa-play" style="font-size:17px; color: white; margin: 0 5px;"></i><span>PLAY</span></div>
+          <img src="static/parallax.jfif" alt="">
+          <div class="content">
+            <div class="ing"> <img src="static/coder.jfif" alt=""></div>
+            <div class="texts">
+              <div class="title">Create Stunning Parallax Websites<br>with CSS...</div>
+              <div class="paragraph">Coder<br>
+                130K views</div>
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                fill="000000c8">
+                <path
+                  d="M479.79-192Q450-192 429-213.21t-21-51Q408-294 429.21-315t51-21Q510-336 531-314.79t21 51Q552-234 530.79-213t-51 21Zm0-216Q450-408 429-429.21t-21-51Q408-510 429.21-531t51-21Q510-552 531-530.79t21 51Q552-450 530.79-429t-51 21Zm0-216Q450-624 429-645.21t-21-51Q408-726 429.21-747t51-21Q510-768 531-746.79t21 51Q552-666 530.79-645t-51 21Z" />
+              </svg>
+            </div>
+
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="box">
+           <div class="black"> <i class="fa fa-play" style="font-size:17px; color: white; margin: 0 5px;"></i><span>PLAY</span></div>
+          <img src="static/cs2.jfif" alt="">
+          <div class="content">
+            <div class="ing"> <img src="static/cs2av.jfif" alt=""></div>
+            <div class="texts">
+              <div class="title">Unlock Secrets with CS2 Hacks...</div>
+              <div class="paragraph">Game Master <br>
+                90K views <span class="dotted">●</span> 3 weeks ago</div>
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                fill="000000c8">
+                <path
+                  d="M479.79-192Q450-192 429-213.21t-21-51Q408-294 429.21-315t51-21Q510-336 531-314.79t21 51Q552-234 530.79-213t-51 21Zm0-216Q450-408 429-429.21t-21-51Q408-510 429.21-531t51-21Q510-552 531-530.79t21 51Q552-450 530.79-429t-51 21Zm0-216Q450-624 429-645.21t-21-51Q408-726 429.21-747t51-21Q510-768 531-746.79t21 51Q552-666 530.79-645t-51 21Z" />
+              </svg>
+            </div>
+
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="box">
+           <div class="black"> <i class="fa fa-play" style="font-size:17px; color: white; margin: 0 5px;"></i><span>PLAY</span></div>
+          <img src="static/earn.jfif" alt="">
+          <div class="content">
+            <div class="ing"> <img src="static/dev.jfif" alt=""></div>
+            <div class="texts">
+              <div class="title">How to Earn Money with Python...</div>
+              <div class="paragraph">Sabir Hussain <br>
+                320K views <span class="dotted">●</span> 5 days ago</div>
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                fill="000000c8">
+                <path
+                  d="M479.79-192Q450-192 429-213.21t-21-51Q408-294 429.21-315t51-21Q510-336 531-314.79t21 51Q552-234 530.79-213t-51 21Zm0-216Q450-408 429-429.21t-21-51Q408-510 429.21-531t51-21Q510-552 531-530.79t21 51Q552-450 530.79-429t-51 21Zm0-216Q450-624 429-645.21t-21-51Q408-726 429.21-747t51-21Q510-768 531-746.79t21 51Q552-666 530.79-645t-51 21Z" />
+              </svg>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Main -->
+
+
+</body>
+
+</html>
